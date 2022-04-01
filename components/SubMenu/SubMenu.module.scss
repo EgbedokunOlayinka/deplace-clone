@@ -1,0 +1,17 @@
+@import "../../styles/include-media";
+@import "../../styles/common";
+
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+
+  a {
+    color: $dark;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 400;
+  }
+}

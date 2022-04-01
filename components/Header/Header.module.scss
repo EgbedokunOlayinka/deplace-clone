@@ -1,0 +1,45 @@
+@import "../../styles/include-media";
+@import "../../styles/common";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;
+  top: 1.75rem;
+  left: 2rem;
+  right: 2rem;
+
+  .imgWrapper {
+
+  }
+
+  .modeWrapper {
+    background-image: url('https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d265c2db3094d6f60ace83a_label.svg');
+    width: 70px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: 'Cyberthrone', sans-serif;
+    }
+  }
+
+  .cartTextWrapper {
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+    }
+  }
+}

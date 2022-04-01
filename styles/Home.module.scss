@@ -1,0 +1,10 @@
+@import "./include-media";
+@import "./common.scss";
+
+.container {
+  height: 100%;
+  background-color: $light;
+  color: $dark;
+  font-family: 'Favorit', sans-serif;
+  padding: 1.5rem 2rem;
+}
