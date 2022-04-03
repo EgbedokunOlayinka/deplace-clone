@@ -1,8 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import About from '../components/About'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import Marquee from '../components/Marquee'
+import Quotes from '../components/Quotes'
+import Shop from '../components/Shop'
 import SubMenu from '../components/SubMenu'
 import styles from '../styles/Home.module.scss'
 
@@ -20,7 +24,13 @@ const Home: NextPage = () => {
 
       <main>
         <Hero />
+        <Marquee />
+        <About />
+        <Shop />
+        <Quotes />
       </main>
+
+      <Footer />
     </div>
   )
 }

@@ -7,11 +7,12 @@
   position: fixed;
   bottom: 2rem;
   left: 2rem;
+  z-index: 5;
 
   a {
     color: $dark;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: .85vw;
     font-weight: 400;
   }
 }

@@ -1,0 +1,50 @@
+@import "../../styles/include-media";
+@import "../../styles/common";
+
+.container {
+    margin-top: 7rem;
+    border: 2px solid $dark;
+    border-left: none;
+    border-right: none;
+    background: $primary;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    & :hover {
+        animation-play-state: paused;
+    }
+    
+    & > div {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        animation: marquee 15s linear infinite;
+        padding: 1rem 0;
+
+        & > p {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+    
+            & > span:nth-child(even) {
+                background: $dark;
+                width: 3px;
+                height: 3px;
+                margin: 0 .75rem;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                bottom: 2px;
+            }
+        }
+    }
+
+}
+
+@keyframes marquee {
+    from {transform: translateX(0);}
+    to {transform: translateX(-100%);}
+}

@@ -1,0 +1,24 @@
+@import "../../styles/include-media";
+@import "../../styles/common";
+
+.container {
+  margin-bottom: 10rem;
+  
+  & > div:nth-child(1) {
+    margin-left: 23.3125rem;
+    background: $tertiary;
+    padding: .75rem;
+    margin-bottom: 7rem;
+    
+    & > p {
+      text-transform: uppercase;
+      font-size: .85vw;
+    }
+  }
+
+  & > div:nth-child(2) {
+    @include section-container;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

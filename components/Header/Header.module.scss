@@ -10,10 +10,6 @@
   left: 2rem;
   right: 2rem;
 
-  .imgWrapper {
-
-  }
-
   .modeWrapper {
     background-image: url('https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d265c2db3094d6f60ace83a_label.svg');
     width: 70px;
@@ -34,10 +30,10 @@
   }
 
   .cartTextWrapper {
-    font-size: 1vw;
     font-weight: 400;
     cursor: pointer;
-
+    font-size: .85vw;
+    
     p {
       margin: 0;
     }

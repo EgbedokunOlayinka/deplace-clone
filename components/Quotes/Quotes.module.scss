@@ -1,0 +1,47 @@
+@import "../../styles/include-media";
+@import "../../styles/common";
+
+.container {
+  @include section-container;
+  max-width: 700px;
+  margin-left: auto;
+  position: relative;
+
+  .imgContainer {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 0%;
+    top: 50%;
+    transform: translate(-0%,-50%);
+
+    .img {
+      object-fit: cover;
+    }
+  }
+
+  .textContainer {
+    & > div {
+      display: flex;
+      gap: 3.5rem;
+
+      & > p:nth-child(1) {
+        font-family: 'Cyberthrone', sans-serif;
+        font-size: 4.5vw;
+        white-space: nowrap;
+        margin-top: .25rem;
+        margin-left: 3rem;
+      }
+
+      & > p:nth-child(2) {
+        font-size: 1.2vw;
+        font-weight: 600;
+        line-height: 1.25rem;
+      }
+    }
+
+    & > div:nth-child(2) {
+      display: none;
+    }
+  }
+}

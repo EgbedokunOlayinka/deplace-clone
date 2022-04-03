@@ -1,0 +1,27 @@
+@import "../../styles/include-media";
+@import "../../styles/common";
+
+.container {
+  @include section-container(7rem, 8.5rem);
+  padding-left: 15.3125rem;
+
+  & > h2 {
+    display: inline-block;
+    font-size: 1.5vw;
+    margin-right: 12rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    vertical-align: top;
+  }
+
+  p {
+    display: inline;
+    font-size: 4vw;
+    letter-spacing: -0.15rem;
+    font-weight: 700;
+
+    & > a {
+      color: $dark;
+    }
+  }
+}
