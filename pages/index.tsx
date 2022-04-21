@@ -1,14 +1,14 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import About from '../components/About'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import Marquee from '../components/Marquee'
-import Quotes from '../components/Quotes'
-import Shop from '../components/Shop'
-import SubMenu from '../components/SubMenu'
-import styles from '../styles/Home.module.scss'
+import type { NextPage } from "next";
+import Head from "next/head";
+import About from "../components/About";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Marquee from "../components/Marquee";
+import Quotes from "../components/Quotes";
+import Shop from "../components/Shop";
+import SubMenu from "../components/SubMenu";
+import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
       <main>
         <Hero />
-        <Marquee />
+        {/* <Marquee /> */}
         <About />
         <Shop />
         <Quotes />
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
