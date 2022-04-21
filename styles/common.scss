@@ -3,6 +3,21 @@
 @import url(//db.onlinewebfonts.com/c/49c8b266a94646f416ada5fae8a447b0?family=Cyberthrone);
 @import "./include-media";
 
+@font-face {
+  font-family: "Favorit";
+  src: url("//db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot");
+  src: url("//db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.svg#Favorit")
+      format("svg");
+}
+
 $light: #fcf9ee;
 $dark: #141414;
 $primary: #ddc92a;
