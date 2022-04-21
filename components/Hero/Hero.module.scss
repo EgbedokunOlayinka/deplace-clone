@@ -1,22 +1,45 @@
 @import "../../styles/include-media";
 @import "../../styles/common";
 
+@mixin hero-text() {
+  font-size: 13.5vw;
+  letter-spacing: -0.9rem;
+  line-height: 12vw;
+  text-align: right;
+
+  @include media("<=1280px") {
+    letter-spacing: -0.8rem;
+  }
+
+  @include media("<=1024px") {
+    letter-spacing: -0.55rem;
+    line-height: 11.5vw;
+  }
+
+  @include media("<=tablet") {
+    letter-spacing: -0.4rem;
+    font-size: 14.5vw;
+    line-height: 12.5vw;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   color: $dark;
   @include section-container(9rem, 0);
+
+  @include media("<=1240px") {
+    @include section-container(5rem, 0);
+  }
 }
 
 .textContainer {
   font-weight: 600;
   .top {
     p {
-      font-size: 13.5vw;
-      letter-spacing: -1rem;
-      line-height: 15vh;
-      text-align: right;
+      @include hero-text();
     }
   }
 
@@ -24,25 +47,47 @@
     display: flex;
     gap: 1.75rem;
 
+    @include media("<=desktop") {
+      gap: 1.25rem;
+    }
+
+    @include media("<=tablet") {
+      gap: 0.6rem;
+    }
+
     & > p {
-      font-size: 13.5vw;
-      letter-spacing: -1rem;
+      @include hero-text();
     }
 
     & > div {
       text-align: right;
-      margin-top: 3rem;
+      margin-top: 1.5rem;
+
+      @include media("<=desktop") {
+        margin-top: 0.75rem;
+      }
+
       p {
         font-size: 4vw;
-        letter-spacing: -.1rem;
-        line-height: 6.5vh;
+        letter-spacing: -0.1rem;
+        line-height: 3.5vw;
+
+        @include media("<=1280px") {
+          font-size: 4vw;
+          // line-height: 2.5rem;
+        }
+
+        @include media("<=1024px") {
+          font-size: 3.5vw;
+          // line-height: 2rem;
+        }
       }
     }
   }
 }
 
 .imgContainer {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
   margin-bottom: 4rem;
   display: flex;
   gap: 1.8rem;
@@ -53,7 +98,7 @@
       height: 88vh;
       border: 3px solid #000;
       position: relative;
-      
+
       .img {
         object-fit: cover;
       }
@@ -62,9 +107,9 @@
     & > div:last-of-type {
       display: flex;
       justify-content: space-between;
-      margin-top: .4rem;
+      margin-top: 0.4rem;
       p {
-        font-size: .85vw;
+        font-size: 0.85vw;
       }
     }
   }

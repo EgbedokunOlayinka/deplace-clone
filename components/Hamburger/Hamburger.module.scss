@@ -1,0 +1,31 @@
+@import "../../styles/include-media";
+@import "../../styles/common";
+
+.container {
+  width: 40px;
+  height: 20px;
+  display: grid;
+  align-items: center;
+  grid-gap: 0.1rem;
+  cursor: pointer;
+
+  @include media("<tablet") {
+    width: 30px;
+    grid-gap: 0.05rem;
+  }
+
+  & > div {
+    height: 2px;
+    background: $dark;
+    width: 100%;
+  }
+
+  & > div:first-of-type {
+    width: 50%;
+  }
+
+  & > div:last-of-type {
+    width: 50%;
+    justify-self: flex-end;
+  }
+}

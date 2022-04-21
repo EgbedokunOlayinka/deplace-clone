@@ -1,14 +1,36 @@
 @import url(//db.onlinewebfonts.com/c/04c4a36facccf2d0906a0f1ed61036ef?family=Favorit);
 @import url(//db.onlinewebfonts.com/c/d73d37902ec72250867b578d3763ee38?family=Favorit);
 @import url(//db.onlinewebfonts.com/c/49c8b266a94646f416ada5fae8a447b0?family=Cyberthrone);
+@import "./include-media";
 
 $light: #fcf9ee;
 $dark: #141414;
 $primary: #ddc92a;
 $secondary: #e7d6c4;
-$tertiary: #DDDDDD;
-$footerBG: #FBF8ED;
+$tertiary: #dddddd;
+$footerBG: #fbf8ed;
 
 @mixin section-container($marginTop: 0, $marginBottom: 0) {
   margin: $marginTop 8rem $marginBottom;
+
+  @include media("<=1280px") {
+    margin: $marginTop 6rem $marginBottom;
+  }
+
+  @include media("<=tablet") {
+    margin: $marginTop 5rem $marginBottom;
+  }
+
+  @include media("<=600px") {
+    margin: $marginTop 4rem $marginBottom;
+  }
+
+  @include media("<=500px") {
+    margin: $marginTop 3rem $marginBottom;
+  }
+
+  @include media("<=480px") {
+    margin: $marginTop 2rem $marginBottom;
+    border: 1px solid red;
+  }
 }

@@ -13,7 +13,7 @@
     height: 120px;
     left: 0%;
     top: 50%;
-    transform: translate(-0%,-50%);
+    transform: translate(-0%, -50%);
 
     .img {
       object-fit: cover;
@@ -26,15 +26,15 @@
       gap: 3.5rem;
 
       & > p:nth-child(1) {
-        font-family: 'Cyberthrone', sans-serif;
+        font-family: "Cyberthrone", sans-serif;
         font-size: 4.5vw;
         white-space: nowrap;
-        margin-top: .25rem;
+        margin-top: 0.25rem;
         margin-left: 3rem;
       }
 
       & > p:nth-child(2) {
-        font-size: 1.2vw;
+        font-size: 1.1vw;
         font-weight: 600;
         line-height: 1.25rem;
       }

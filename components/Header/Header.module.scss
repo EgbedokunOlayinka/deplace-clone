@@ -9,9 +9,34 @@
   top: 1.75rem;
   left: 2rem;
   right: 2rem;
+  height: auto;
+
+  @include media("<=desktop") {
+    align-items: center;
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .imgWrapper {
+    position: relative;
+    height: 145px;
+    width: 50px;
+    @include media("<=desktop") {
+      height: 50px;
+      width: 145px;
+    }
+    @include media("<=550px") {
+      height: 40px;
+      width: 120px;
+    }
+    @include media("<=480px") {
+      height: 30px;
+      width: 100px;
+    }
+  }
 
   .modeWrapper {
-    background-image: url('https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d265c2db3094d6f60ace83a_label.svg');
+    background-image: url("https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d265c2db3094d6f60ace83a_label.svg");
     width: 70px;
     height: 25px;
     background-position: center;
@@ -25,15 +50,23 @@
       margin: 0;
       font-size: 1rem;
       font-weight: 400;
-      font-family: 'Cyberthrone', sans-serif;
+      font-family: "Cyberthrone", sans-serif;
     }
   }
 
   .cartTextWrapper {
     font-weight: 400;
     cursor: pointer;
-    font-size: .85vw;
-    
+    font-size: 1vw;
+
+    @include media("<=desktop") {
+      font-size: 0.85rem;
+    }
+
+    @include media("<=tablet") {
+      font-size: 1rem;
+    }
+
     p {
       margin: 0;
     }
